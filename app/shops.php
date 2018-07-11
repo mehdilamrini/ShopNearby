@@ -13,7 +13,7 @@ class shops extends Model
 
 
     protected $fillable = [
-        'name', 'image', 'city',
+        'name', 'image', 'city','description'
     ];
 
 
