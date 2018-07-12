@@ -17,8 +17,12 @@
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet" type="text/css">
 
+   @yield('js')
+
+
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{asset('css/cards.css')}}" rel="stylesheet">
 </head>
 <body>
     <div id="app">
@@ -49,7 +53,7 @@
                             </li>
                         @else
                             <li class="nav-item dropdown">
-                                <a class="nav-link" href="{{ url('/home') }}">Nearby Shops</a>
+                                <a class="nav-link" href="{{ url('/nearbyshops') }}">Nearby Shops</a>
 
 
                             </li>
